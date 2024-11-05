@@ -1,0 +1,151 @@
+/* Container styling */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 15px;
+  }
+  
+  /* Logo styling */
+  .logo {
+    float: left;
+    margin-right: 40px;
+    width: 400px;
+    height: auto;
+  }
+  
+  /* Form styling */
+  .login-form {
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    display: block;
+    text-align: center;
+    width: 94%;
+    padding: 11px;
+    background-color: #43187b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #703ab7;
+  }
+  
+  /* Button hover effect */
+  .button-container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .button-container::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 123, 255, 0.2);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .button-container:hover::before {
+    opacity: 1;
+  }
+  /* Google Sign-In button styling */
+.google-signin-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e4dede; /* Google Red */
+    color: rgb(3, 2, 2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px; /* Add some spacing between the form and the Google button */
+  }
+  
+  /* Hover effect for Google Sign-In button */
+  .google-signin-button:hover {
+    background-color: #ddd3d3; /* Darker shade of Google Red */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  }
+  
+  /* Add background for Google button section */
+  .google-signin-button::before {
+    content: "";
+    background-image: url('google.png'); /* Add Google logo if you have it */
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 10px center;
+    padding-left: 40px; /* Make room for the icon */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 30px;
+    }
+  
+    .form-group input {
+      padding: 10px;
+    }
+  
+    .login-button {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 20px;
+    }
+  
+    .form-group input {
+      padding: 8px;
+    }
+  
+    .login-button {
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,89 @@
+/* Form Container */
+.taskform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f6fa;
+  }
+  
+  /* Task Form */
+  .taskform {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #6c5ce7; /* Violet color */
+    margin-bottom: 20px;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #2c2c54;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #6c5ce7;
+  }
+  
+  /* Proof Field */
+  .required {
+    color: red;
+  }
+  
+  /* Form Actions */
+  /* .form-actions {
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .cansel-button,
+  .submit-button {
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cansel-button {
+    background-color: #bdc3c7;
+  }
+  
+  .submit-button:hover,
+  .cansel-button:hover {
+    background-color: #4834d4;
+  }
+  

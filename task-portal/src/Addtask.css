@@ -1,0 +1,145 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #2c2c54;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.main-content h2{
+  text-align: center;
+}
+
+.add-task-container {
+  padding: 20px;
+  background-color: #2c2c54;
+  border-radius: 10px;
+  flex: 5;
+  margin: 20px;
+  color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.add-task-container h2 {
+  text-align: right;
+  margin-bottom: 15px;
+  color: #48dbfb;
+  font-size: 20px;
+}
+
+
+
+.task-form {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 30px;
+  transform: translateX(2px); /* Move the entire form 2px to the right */
+}
+
+
+.task-form label {
+  color: #dcdcdc;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 10px; /* Decrease this value to move the label closer to the input */
+  margin-left: 40px;
+}
+
+
+
+.task-form input,
+.task-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #5e5ea6;
+  background-color: #3a3a6a;
+  color: #fff;
+  transition: border-color 0.3s;
+  width: 40%;
+  font-size: 12px;
+}
+
+.task-form input:focus,
+.task-form select:focus {
+  border-color: #48dbfb;
+  outline: none;
+}
+
+.duration-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.cancel-button,
+.create-button {
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cancel-button {
+  background-color: #ff4757;
+  color: #fff;
+}
+
+.create-button {
+  background-color: #48dbfb;
+  color: #2c2c54;
+}
+
+.cancel-button:hover {
+  background-color: #ff6b81;
+  transform: translateY(-2px);
+}
+
+.create-button:hover {
+  background-color: #1dd1a1;
+}
+
+@media (max-width: 300px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .add-task-container {
+    margin: 15px;
+    width: 90%;
+  }
+
+  .task-form {
+    grid-template-columns: 1fr;
+  }
+
+  .duration-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-actions {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
