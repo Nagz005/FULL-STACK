@@ -1,0 +1,111 @@
+/* LeaveForm.css */
+
+/* Container styling */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styling */
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Input fields styling */
+  .form-container input[type="text"],
+  .form-container input[type="date"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-container input[type="text"]:focus,
+  .form-container input[type="date"]:focus,
+  .form-container textarea:focus {
+    border-color: #5a67d8;
+    outline: none;
+  }
+  
+  /* Textarea styling */
+  .form-container textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Button styling */
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #434c9c;
+  }
+  
+  .form-container button:active {
+    background-color: #333a78;
+  }
+  
+  /* Cancel button styling */
+  .form-container .cancel-btn {
+    background-color: #e53e3e;
+    margin-right: 10px;
+  }
+  
+  .form-container .cancel-btn:hover {
+    background-color: #c53030;
+  }
+  
+  /* Submit and Cancel buttons alignment */
+  .form-container .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Add responsive styling */
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .form-container button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .form-container .button-group {
+      flex-direction: column;
+    }
+  
+    .form-container .cancel-btn {
+      margin-right: 0;
+    }
+  }
+  

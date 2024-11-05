@@ -1,0 +1,44 @@
+/* Overall container for UserFaculty */
+.task-container {
+    display: flex; /* Align sidebar and content side by side */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #f5f6fa; /* Soft background color */
+  }
+  
+  /* Task content area */
+  .task-content {
+    margin-left: 20px; /* Space between sidebar and task content */
+    flex-grow: 1; /* Allow content area to grow */
+    padding: 20px; /* Add padding for task content */
+    background-color: #ffffff; /* White background for task content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Heading for assigned tasks */
+  .task-heading {
+    color: #6c5ce7; /* Interactive violet color */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Individual task details */
+  .task-details {
+    margin-bottom: 20px; /* Space between tasks */
+    padding: 15px; /* Inner padding for task detail boxes */
+    border: 1px solid #ddd; /* Light border for task boxes */
+    border-radius: 5px; /* Rounded corners for task boxes */
+    background-color: #f0f0f0; /* Light gray background for task details */
+  }
+  
+  /* Task title style */
+  .task-details h3 {
+    margin: 0; /* Remove default margin */
+    color: #2c2c54; /* Dark violet color for titles */
+  }
+  
+  /* Task description style */
+  .task-details p {
+    margin: 5px 0; /* Space above and below paragraphs */
+    color: #333; /* Darker text for better readability */
+  }
+  
